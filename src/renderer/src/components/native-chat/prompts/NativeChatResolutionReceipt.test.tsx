@@ -10,7 +10,7 @@ import type {
 } from '../../../../../shared/agent-session/journal/agent-session-journal-types'
 
 import { NativeChatResolutionReceipt } from './NativeChatResolutionReceipt'
-import { structuredQuestionTranscript } from '../../../../../shared/structured-agent-question-projection'
+import { structuredQuestionTranscript } from '../../../../../shared/native-chat/transcript/messages/structured-agent-question-projection'
 import {
   NativeChatDisclosureContext,
   useNativeChatDisclosures

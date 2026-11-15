@@ -1,7 +1,10 @@
 // @vitest-environment happy-dom
 import { act, cleanup, renderHook, waitFor } from '@testing-library/react'
 import { afterEach, beforeEach, expect, it, vi } from 'vitest'
-import type { DiscoveredSkill, SkillDiscoveryResult } from '../../../../../../shared/skills'
+import type {
+  DiscoveredSkill,
+  SkillDiscoveryResult
+} from '../../../../../../shared/skills/discovery/skills'
 import { useAppStore } from '@/store'
 import { makeFolderWorkspace } from '@/store/folder-workspaces/folder-workspace.test-fixture'
 import { useNativeChatSkills } from './use-native-chat-skills'

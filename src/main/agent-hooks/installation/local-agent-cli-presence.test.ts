@@ -2,7 +2,7 @@ import { chmodSync, mkdirSync, mkdtempSync, rmSync, symlinkSync, writeFileSync }
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import type { ManagedAgentHookTarget } from '../../../shared/managed-agent-hook-targets'
+import type { ManagedAgentHookTarget } from '../../../shared/agent-hook-listener/configuration/managed-agent-hook-targets'
 import { detectLocalManagedAgentCliPresence } from './local-agent-cli-presence'
 
 const { mergePersistedWindowsPathAsyncMock } = vi.hoisted(() => ({
